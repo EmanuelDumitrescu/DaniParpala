@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work - Daniel Parpala</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .gallery-item {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .gallery-item-info {
+            padding: 1rem;
+        }
+
+        .gallery-item-info h3 {
+            color: #007bff;
+            margin-bottom: 0.5rem;
+        }
+
+        .gallery-item-info p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Daniel Parpala</h1>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">My Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Gallery Section -->
+    <section class="section">
+        <div class="container">
+            <style>
+                .back-button {
+                    display: inline-block;
+                    margin-bottom: 2rem;
+                    padding: 10px 20px;
+                    background-color: #007bff;
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    transition: background-color 0.3s;
+                }
+
+                .back-button:hover {
+                    background-color: #0056b3;
+                }
+            </style>
+            <a href="index.html" class="back-button">← Back to Home</a>
+            
+            <h2>My Painting Projects</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 2rem;">View some of my recent painting projects and works</p>
+
+            <div class="gallery">
+                <a href="london-bridge.html" style="text-decoration: none; color: inherit;">
+                    <div class="gallery-item">
+                        <img src="images/London Bridge/1.jpg" alt="London Bridge">
+                        <div class="gallery-item-info">
+                            <h3>London Bridge</h3>
+                            <p>Click to view all London Bridge paintings</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="londons-eye.html" style="text-decoration: none; color: inherit;">
+                    <div class="gallery-item">
+                        <img src="images/London's Eye/1.jpg" alt="London's Eye">
+                        <div class="gallery-item-info">
+                            <h3>London's Eye</h3>
+                            <p>Click to view all London's Eye paintings</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="big-ben.html" style="text-decoration: none; color: inherit;">
+                    <div class="gallery-item">
+                        <img src="images/Big Ben/1.jpg" alt="Big Ben">
+                        <div class="gallery-item-info">
+                            <h3>Big Ben</h3>
+                            <p>Click to view all Big Ben paintings</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- <div class="gallery-item">
+                    <img src="images/minion.jpg" alt="Project 4">
+                    <div class="gallery-item-info">
+                        <h3>Project 4</h3>
+                        <p>Description of your fourth painting project</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/minion.jpg" alt="Project 5">
+                    <div class="gallery-item-info">
+                        <h3>Project 5</h3>
+                        <p>Description of your fifth painting project</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/minion.jpg" alt="Project 6">
+                    <div class="gallery-item-info">
+                        <h3>Project 6</h3>
+                        <p>Description of your sixth painting project</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Daniel Parpala. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

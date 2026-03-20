@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Daniel Parpala</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .about-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            margin-top: 2rem;
+        }
+
+        .about-image {
+            text-align: center;
+        }
+
+        .about-image img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .about-content h3 {
+            color: #007bff;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .about-content h3:first-child {
+            margin-top: 0;
+        }
+
+        .about-content p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .info-card {
+            background-color: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #007bff;
+        }
+
+        .info-card h4 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-bottom: 2rem;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            .about-container {
+                grid-template-columns: 1fr;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Daniel Parpala</h1>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">My Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="section">
+        <div class="container">
+            <a href="index.html" class="back-button">← Back to Home</a>
+            
+            <h2>About Me</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 3rem;">Learn more about Daniel Parpala and my journey as a professional painter</p>
+
+            <div class="about-container">
+                <!-- Image -->
+                <div class="about-image">
+                    <img src="images/minion.jpg" alt="Daniel Parpala">
+                </div>
+
+                <!-- Content -->
+                <div class="about-content">
+                    <h3>Who I Am</h3>
+                    <p>
+                        Welcome! I'm Daniel Parpala, a professional painter with over 10 years of experience in the industry. 
+                        I'm passionate about bringing beauty and creativity to every project I undertake.
+                    </p>
+
+                    <h3>My Experience</h3>
+                    <p>
+                        With a decade of professional painting experience, I have worked on a wide variety of projects - from 
+                        residential homes to commercial spaces. My expertise covers interior painting, exterior painting, 
+                        decorative finishes, and specialized techniques.
+                    </p>
+
+                    <h3>My Approach</h3>
+                    <p>
+                        I believe in quality workmanship, attention to detail, and clear communication with my clients. 
+                        Every project is treated with the same level of care and professionalism, whether it's a small 
+                        room or a large commercial space.
+                    </p>
+
+                    <h3>What I Offer</h3>
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <h4>Professional Quality</h4>
+                            <p>Top-tier materials and proven techniques for lasting results</p>
+                        </div>
+                        <div class="info-card">
+                            <h4>On-Time Delivery</h4>
+                            <p>Reliable scheduling and completion within agreed timeframes</p>
+                        </div>
+                        <div class="info-card">
+                            <h4>Expert Consultation</h4>
+                            <p>Professional advice on colors, finishes, and design solutions</p>
+                        </div>
+                        <div class="info-card">
+                            <h4>Customer Satisfaction</h4>
+                            <p>Commitment to exceeding expectations on every project</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Info -->
+            <div style="background-color: #f8f9fa; padding: 2rem; border-radius: 8px; margin-top: 3rem;">
+                <h3 style="color: #333; margin-bottom: 1rem;">Quick Facts</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
+                    <div>
+                        <p style="font-size: 1.8rem; color: #007bff; font-weight: bold;">10+</p>
+                        <p style="color: #666;">Years of Experience</p>
+                    </div>
+                    <div>
+                        <p style="font-size: 1.8rem; color: #007bff; font-weight: bold;">100+</p>
+                        <p style="color: #666;">Projects Completed</p>
+                    </div>
+                    <div>
+                        <p style="font-size: 1.8rem; color: #007bff; font-weight: bold;">99%</p>
+                        <p style="color: #666;">Client Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Daniel Parpala. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
