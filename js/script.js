@@ -97,3 +97,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// Handle contact form submission
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.querySelector('form[name="contact"]');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            // Netlify will handle the submission, but we can add visual feedback
+            const submitBtn = contactForm.querySelector('.submit-btn');
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+        });
+    }
+});
